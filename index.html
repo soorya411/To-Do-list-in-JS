@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-list</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #list li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 bg-white p-3 text-center shadow rounded mt-5">
+                <h1 class="text-secondary text-center">To-Do List
+                </h1>
+                <input id="input" type="text" class="form-control my-2 " placeholder="Enter a Task">
+                <button id="btn" onclick="addtask()" class="btn btn-primary w-75 my-2">Add Task</button>
+                <ul class="bg-light mb-2 p-3 fs-5 text-primary" id="list">
+
+                </ul>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+<script src="./script.js"></script>
+</body>
+
+</html>
